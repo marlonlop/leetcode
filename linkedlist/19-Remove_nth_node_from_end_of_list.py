@@ -19,3 +19,5 @@ class Solution:
         r.next = r.next.next
         return dummy.next
     
+    
+    

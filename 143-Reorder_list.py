@@ -21,9 +21,9 @@ class Solution:
             reversedHead.next = prev
             prev = reversedHead
             reversedHead = next_tmp
-        mid = slow
         
         ''' by unpacking there is no need to keep track of next_temp
+        mid = slow
         # Reverse second half
         prev, cur = None, mid
         while cur:

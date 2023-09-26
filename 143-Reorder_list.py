@@ -23,7 +23,7 @@ class Solution:
             reversedHead = next_tmp
         mid = slow
         
-        ''' by upcaking there is no need to keep track of next_temp
+        ''' by unpacking there is no need to keep track of next_temp
         # Reverse second half
         prev, cur = None, mid
         while cur:

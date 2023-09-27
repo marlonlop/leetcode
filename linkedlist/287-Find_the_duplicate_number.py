@@ -1,7 +1,7 @@
 class Solution:
     def findDuplicate(self, nums: List[int]) -> int:
         slow = fast = 0
-
+        # Time O(n) and Space O(1)
         while True:
             slow = nums[slow]
             fast = nums[nums[fast]]

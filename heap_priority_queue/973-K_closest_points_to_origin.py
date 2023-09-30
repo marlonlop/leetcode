@@ -1,8 +1,8 @@
 class Solution:
     def kClosest(self, points: List[List[int]], k: int) -> List[List[int]]:
         keysMinHeap = []
-        for point in points:
-            x, y = point
+        for x, y in points:
+            #x, y = point
             sq = (x - 0)**2 + (y - 0)**2 
             keysMinHeap.append([sq, x, y])
         

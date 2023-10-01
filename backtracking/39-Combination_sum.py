@@ -4,7 +4,8 @@ class Solution:
 
         def backtrack(idx, possibleComb, total):
             if total == target:
-                res.append(possibleComb.copy())
+                #res.append(possibleComb.copy())
+                res.append(possibleComb[:])
                 return
             if idx >= len(candidates) or total > target:
                 return

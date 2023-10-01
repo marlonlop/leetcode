@@ -5,7 +5,8 @@ class Solution:
 
         def backtrack(idx):
             if idx >= len(nums):
-                powerSet.append(subset.copy())
+                #powerSet.append(subset.copy())
+                powerSet.append(subset[:]) #more efficient 
                 return
             
             # decision tree to include current nums[idx]

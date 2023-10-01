@@ -24,3 +24,8 @@ class Solution:
         
         backtrack(0, [], 0)
         return res
+    
+    '''
+    time O(2^t) or O(2^t/(min(candidates)) at most t, because each element in candidates could be at min =1
+    space O(2^t) or O(2^t/(min(candidates))
+    '''

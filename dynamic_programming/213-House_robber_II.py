@@ -6,7 +6,8 @@ class Solution:
         def maxRob(houses):
             rob1, rob2 = 0, 0
             for h in houses:
-                # rob1, rob2, 1,2,3,1
+                #             h h+1 h+2 ...
+                # rob1, rob2, 1, 2,  3,  1
                 temp = max(rob1 + h, rob2)
                 rob1 = rob2
                 rob2 = temp

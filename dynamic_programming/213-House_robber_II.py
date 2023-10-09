@@ -15,6 +15,8 @@ class Solution:
             return rob2
         
         return max(maxRob(nums[:-1]), maxRob(nums[1:]))
+        # return max(nums[0], maxRob(nums[:-1]), maxRob(nums[1:]))
+        # by adding nums[0] we could remove the if statement at begining of def rob()
 
 '''
 time O(n) n=len(nums)

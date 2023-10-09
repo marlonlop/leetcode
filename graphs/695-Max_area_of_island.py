@@ -15,7 +15,7 @@ class Solution:
                 return 0
 
             visited.add((r, c))
-            ''' this method works too
+            ''' 
             directions = [[0, 1], [0, -1], [1, 0], [-1, 0]]
             curArea = 0
             for rowD, colD in directions:

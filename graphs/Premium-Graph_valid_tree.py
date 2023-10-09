@@ -23,8 +23,8 @@ class Solution:
             for e in adjacency[vertex]:
                 if e == prev: # ignoring edge that loops back to parent bc given undirected graph
                     continue
-                if not dfs(e, vertex): #detected lood from dfs base case
+                if not dfs(e, vertex): #detected loop from dfs base case
                     return False 
-            return True #bc no loop detected
+            return True #bc no loop detected (but it could be have disconnected vertices)
         
-        return dfs(0, -1) and len(visited) == n # make sure graph is tree
+        return dfs(0, -1) and len(visited) == n # make sure graph is tree (no loops and all v are connected)

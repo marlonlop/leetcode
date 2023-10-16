@@ -15,6 +15,10 @@ class Solution:
         return dp[0]
         
         '''
+for both solutions
+time O(n)
+space O(n)
+
         # dfs approach
         dp = {len(s) : 1}
         def dfs(i):
